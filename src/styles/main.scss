@@ -1,0 +1,14 @@
+
+// Import theme
+@import "../../themes/minimo/src/stylesheets/style";
+
+// -------------
+// Overrides
+// -------------
+
+// main menu
+.main-menu {
+    li {
+        text-transform: none;
+    }
+}

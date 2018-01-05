@@ -1,5 +1,5 @@
-baseURL = "http://s.loix.me"
-title = "Sébastien Loix"
+baseURL = "http://s2.loix.me"
+title = "Site title ab"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Front-end engineer and music lover"
+description = "Site subtitle asdfsa sdf sf "
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -37,8 +37,8 @@ suffix = ""
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
-dateFormat = "Jan 02 2006"
-listDateFormat = "Jan 02 2006"
+dateFormat = "02 Jan 2006"
+listDateFormat = "02 Jan 2006"
 hideEntryNavigation = ["page"] # boolean / array of sections
 recentPostsLength = 4
 hideSocialMenu = false
@@ -72,12 +72,6 @@ tag = "tags"
 
 [permalinks]
 page = "/:slug/"
-
-[[menu.main]]
-name = "Repo"
-weight = -10
-identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
 
 [blackfriday]
 hrefTargetBlank = true
