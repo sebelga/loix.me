@@ -4,7 +4,7 @@
   "description": "Static files for Personal website",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p --env.NODE_ENV=prod && hugo -D",
+    "build": "node_modules/webpack/bin/webpack.js -p --env.NODE_ENV=prod && hugo -D",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --progress --colors"
   },
