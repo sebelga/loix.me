@@ -1,12 +1,21 @@
-<section id='recent-posts' class='home-section'>
+<section id='current-projects' class='home-section'>
     <header>
         <h2 class='home-section-title title'>
-            {{- i18n "currentProjects" -}}
+            {{- i18n "projects" -}}
         </h2>
     </header>
 
     <div class='list-container'>
         <ul class='list'>
+            <ul class="list">
+                {{ range $.Site.Data.projects.en.current }}
+                    <li>
+                        <div class="current-project__title">{{ .title }}</div>
+                        <p class="current-project__descr">{{ .descr }}</p>
+                    </li>
+                {{ end }}
+            </ul>
+
             {{ range ( first .Site.Params.settings.recentPostsLength ( where .Data.Pages "Section" "in" ("projects") ) ) }}
                 {{ .Render "li"}}
             {{ end }}

@@ -8,7 +8,9 @@ categories:
 tags:
   -
 draft: true
-menu: "main"
+menu:
+    main:
+        weight: 10
 ---
 
-> Minimalism is not a lack of something. It’s simply the perfect amount of something. — Nicholas Burroughs
+> The end of wisdom is to dream high enough not to lose the dream in the seeking of it. — William Faulkner

@@ -1,6 +1,9 @@
 
+@import "vars";
+
 // Import theme
 @import "../../themes/minimo/src/stylesheets/style";
+
 
 // -------------
 // Overrides
@@ -10,5 +13,24 @@
 .main-menu {
     li {
         text-transform: none;
+    }
+}
+
+// -------------
+// PAGES
+// -------------
+
+// home (list)
+.home-section {
+    margin-bottom: 2em;
+}
+
+.current-project {
+    &__title {
+        font-weight: 600;
+    }
+
+    &__descr {
+        font-size: $text-small;
     }
 }

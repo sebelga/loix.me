@@ -61,12 +61,6 @@ other = "{{ .Count }} mins read"
 [recentPosts]
 other = "Recent Posts"
 
-[currentProjects]
-other = "Current Projects"
-
-[currentLearning]
-other = "Estudiando"
-
 [skipToContent]
 other = "Skip to Content"
 
@@ -79,3 +73,9 @@ other = "Table of Contents"
 [tag]
 one = "Tag"
 other = "Tags"
+
+[projects]
+other = "Current Projects"
+
+[currentLearning]
+other = "Estudiando"

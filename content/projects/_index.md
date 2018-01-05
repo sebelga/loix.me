@@ -7,5 +7,7 @@ categories:
 tags:
   -
 draft: true
-menu: "main"
+menu:
+    main:
+        weight: 50
 ---
