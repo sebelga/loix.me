@@ -59,10 +59,10 @@ one = "One min read"
 other = "{{ .Count }} mins read"
 
 [recentPosts]
-other = "Recent Posts"
+other = "Últimos posts"
 
 [skipToContent]
-other = "Skip to Content"
+other = "Ir al contenido"
 
 [socialMenu]
 other = "Social Menu"
@@ -75,7 +75,7 @@ one = "Tag"
 other = "Tags"
 
 [projects]
-other = "Current Projects"
+other = "Proyectos"
 
 [currentLearning]
 other = "Estudiando"

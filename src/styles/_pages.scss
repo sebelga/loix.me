@@ -1,0 +1,24 @@
+//---- home (list)
+.home-section {
+    margin-bottom: 2em;
+}
+
+.current-project {
+    &__title {
+        font-weight: 600;
+    }
+
+    &__descr {
+        font-size: $text-small;
+    }
+
+    &:last-child {
+        &__descr { margin-bottom: 0; }
+    }
+}
+
+.currently-learning {
+    &__descr {
+        font-size: $text-small;
+    }
+}
