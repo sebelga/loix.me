@@ -4,8 +4,9 @@
   "description": "Static files for Personal website",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf public/*",
     "build": "webpack -p --env.NODE_ENV=prod && hugo -D",
-    "postbuild": "mv public/es public/en",
+    "postbuild": "mv public/es public/en && mv public/robots.txt public/en",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --progress --colors"
   },
@@ -25,6 +26,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.0.10",
+    "rimraf": "2.6.2",
     "sass-loader": "^6.0.6",
     "webpack": "^3.10.0"
   }
