@@ -96,7 +96,7 @@ module.exports = (env) => {
         plugins: [define, extractCSS, assetsManifest],
     };
 
-    if (env.NODE_ENV === 'production') {
+    if (env.NODE_ENV === 'prod') {
         config.plugins.push(cleanBuild);
     }
 
