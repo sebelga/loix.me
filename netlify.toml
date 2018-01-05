@@ -1,7 +1,3 @@
 [build]
   publish = "public"
   command = "npm run build"
-
-[context.production]
-  [context.production.environment]
-    NODE_ENV = "production"
