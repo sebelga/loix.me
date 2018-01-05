@@ -1,5 +1,9 @@
 ---
 title: "Silent drop"
-date: 2018-01-04T13:47:00+01:00
+date: "2017-01-10"
 draft: true
+shortDescr: "Some short text for Silent drop"
+current: true
 ---
+
+Description of project Silent drop

@@ -7,15 +7,9 @@
 
     <div class='list-container'>
         <ul class='list'>
-            <ul class="list">
-                {{ $data := index .Site.Data .Site.Language.Lang }}
-                {{ range $data.projects.current }}
-                    <li class="current-project">
-                        <div class="current-project__title">{{ .title }}</div>
-                        <p class="current-project__descr">{{ .descr }}</p>
-                    </li>
-                {{ end }}
-            </ul>
+            {{ range (where (where .Data.Pages "Section" "in" ("projects")) ".Params.current" true) }}
+                {{ .Render "li" }}
+            {{ end }}
         </ul>
     </div>
 </section>

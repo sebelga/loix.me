@@ -1,11 +1,14 @@
 <li class='list-item'>
     <article>
-      <header class='list-item-header'>
-        <h3 class='list-item-title'>
-          <a href='{{ .Permalink | relURL }}'>
-            {{- .Title -}}
-          </a>
-        </h3>
-      </header>
+        <header class='list-item-header'>
+            <h3 class='list-item-title'>
+                <a href='{{ .Permalink | relURL }}'>
+                    {{- .Title -}}
+                </a>
+            </h3>
+            <p class="list-item-descr">
+                {{ .Params.shortDescr }}
+            </p>
+        </header>
     </article>
-  </li>
+</li>

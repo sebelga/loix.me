@@ -1,11 +1,11 @@
 [[current]]
     title = "golang"
     descr = """
-        Even though I am a front-end engineer which also develop backend APIs with Node.js,
-        I feel it is important to learn a strongly typed backend language for better communication with the team."""
+        Even though I am a front-end engineer I like to expand my knowledge of the stack.
+        Aside... golang is a pretty cool language to learn! :)"""
 
 [[current]]
     title = "GraphQL"
     descr = """
-        Optimize API calls with a good data layer on the backend has always been something I gave a lot of attention.
+        Optimize API calls with a good data layer in front of the backend datastore has always been something I gave a lot of attention.
         GraphQL is a great language to achieve that!"""

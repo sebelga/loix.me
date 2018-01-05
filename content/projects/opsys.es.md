@@ -1,9 +1,10 @@
 ---
-date: "2017-01-01"
+date: "2018-01-05"
 title: "Opsys"
 authors: []
 draft: true
-shortDescr: "Some short text for Opsys"
+shortDescr: "Descripción de Opsys"
+current: false
 ---
 
 Description of project Opsys

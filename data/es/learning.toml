@@ -1,0 +1,9 @@
+[[current]]
+    title = "golang"
+    descr = """
+        Texto en español."""
+
+[[current]]
+    title = "GraphQL"
+    descr = """
+        Español text"""
