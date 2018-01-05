@@ -1,4 +1,4 @@
-import '../styles/main';
+import '../styles/main.scss';
 
 import { test } from './module-a';
 

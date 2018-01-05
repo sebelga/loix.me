@@ -4,3 +4,6 @@ node_modules
 
 # Generated content
 public
+static/assets/css
+static/assets/js
+data/assets.json
