@@ -1,0 +1,19 @@
+<h4>Page resources</h4>
+<ul>
+    {{ range .Resources }}
+    <li><a href="{{ .Permalink }}">{{ .ResourceType }}</a></li>
+    {{ end }}
+</ul>
+
+<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <p>DIR: {{.Page.Dir}}</p>
+    {{ range .Resources }}
+    {{ if in .RelPermalink "small" }}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="large-image.jpg" itemprop="contentUrl" data-size="600x400">
+            <img src="{{ .RelPermalink }}" itemprop="thumbnail" />
+        </a>
+    </figure>
+    {{ end }}
+    {{ end }}
+</div>

@@ -25,8 +25,14 @@ title404 = "Nothing's here!"
 
 [params.assets]
 favicon = "favicon.ico"
-# customCSS = ["css/custom.css"]
-# customJS = ["js/custom.js"]
+customCSS = [
+    "vendors/photoswipe/photoswipe.css",
+    "vendors/photoswipe/default-skin/default-skin.css"
+]
+customJS = [
+    "vendors/photoswipe/photoswipe.min.js",
+    "vendors/photoswipe/photoswipe-ui-default.min.js"
+]
 gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
@@ -80,13 +86,11 @@ hardLineBreak = true
 [languages]
 # edit this block for your own language
 [languages.en]
-baseURL = "https://loix-me.netlify.com"
 lang = "en"
 languageName = "English"
 weight = 1
 
 [languages.es]
-baseURL = "https://loix-me.netlify.com/es"
 lang = "es"
 languageName = "Español"
 weight = 2

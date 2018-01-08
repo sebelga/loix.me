@@ -1,6 +1,12 @@
-
 @import "vars";
+
+//---- vendors
+// @import "../../node_modules/photoswipe/src/css/main";
+// @import "../../node_modules/photoswipe/src/css/default-skin/default-skin";
+
+//---- theme
 @import "../../themes/minimo/src/stylesheets/style";
+
 @import "overwrite";
 @import "pages";
 @import "partials";

@@ -7,6 +7,11 @@
     "env": {
         "node": true
     },
+    "globals": {
+        "PhotoSwipe": true,
+        "PhotoSwipeUI_Default": true,
+        "document": true
+    },
      "extends": "airbnb-base",
      "rules": {
         "indent": ["error", 4, {"SwitchCase": 1}],
