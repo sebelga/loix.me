@@ -1,19 +1,16 @@
-<h4>Page resources</h4>
-<ul>
-    {{ range .Resources }}
-    <li><a href="{{ .Permalink }}">{{ .ResourceType }}</a></li>
-    {{ end }}
-</ul>
-
-<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-    <p>DIR: {{.Page.Dir}}</p>
-    {{ range .Resources }}
-    {{ if in .RelPermalink "small" }}
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="large-image.jpg" itemprop="contentUrl" data-size="600x400">
-            <img src="{{ .RelPermalink }}" itemprop="thumbnail" />
-        </a>
-    </figure>
+{{ with .Resources.ByType "image" }}
+<div class="content-wrapper c-photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {{ range $index, $elem := $.Resources }}
+    {{ if in $elem.RelPermalink "small" }}
+    <a
+        href="{{ strings.Replace .RelPermalink "-small" "" }}"
+        itemprop="contentUrl"
+        data-size="1200x765"
+        data-index="{{ div $index 2 }}"
+        class="c-photo-gallery__link">
+        <img src="{{ .RelPermalink }}" itemprop="thumbnail" />
+    </a>
     {{ end }}
     {{ end }}
 </div>
+{{ end }}

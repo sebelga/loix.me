@@ -6,4 +6,4 @@ draft: true
 shortDescr: "Some short text for Opsys"
 ---
 
-Description of project Opsys
+Description of project Opsys..

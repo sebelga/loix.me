@@ -6,4 +6,4 @@ shortDescr: "Maintainer of a 'mongoose' clone for the Google Datastore"
 current: true
 ---
 
-Description of project gstore-node
+Description of project gstore-node..

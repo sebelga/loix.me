@@ -10,7 +10,8 @@
     "globals": {
         "PhotoSwipe": true,
         "PhotoSwipeUI_Default": true,
-        "document": true
+        "document": true,
+        "window": true
     },
      "extends": "airbnb-base",
      "rules": {

@@ -69,7 +69,7 @@ module.exports = (env) => {
                     loader: extractCSS.extract({
                         use: [
                             {
-                                loader: 'css-loader',
+                                loader: 'css-loader?sourceMap',
                                 options: {
                                     importLoaders: 1,
                                 },
@@ -84,9 +84,14 @@ module.exports = (env) => {
                                     ],
                                 },
                             },
-                            'sass-loader',
+                            'resolve-url-loader',
+                            'sass-loader?sourceMap',
                         ],
                     }),
+                },
+                {
+                    test: /\.jpe?g$|\.gif$|\.png$/i,
+                    loader: 'file-loader?name=/assets/img/[name].[ext]',
                 },
             ],
         },

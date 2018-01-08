@@ -11,6 +11,20 @@
 @import "pages";
 @import "partials";
 
+@import "components/photo-gallery";
+
 body {
     overflow-y: scroll;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: $max-content-width;
+    padding-left: $unit;
+    padding-right: $unit;
+}
+
+.single-content-wrapper {
+    display: flex;
+    flex-direction: column;
 }

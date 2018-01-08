@@ -1,9 +1,10 @@
 ---
 title: "Silent drop"
-date: "2016-07-01"
+date: "2017-01-10"
 draft: true
-shortDescr: "Texto corto español para Silent drop"
+shortDescr: "Texto presentación Silent drop"
 current: true
+gallery: true
 ---
 
-Texto español Silent drop
+Español Descripción of project Silent drop...

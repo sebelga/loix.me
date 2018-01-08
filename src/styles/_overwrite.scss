@@ -6,3 +6,25 @@
         margin-right: 1em;
     }
 }
+
+//---- entry
+.entry-content {
+    @media(min-width: $bp-tablet) {
+        order: 1;
+    }
+}
+
+//---- Photoswipe
+.pswp__button--arrow--right,
+.pswp__button--arrow--left {
+    &:active, &:hover {
+        background: rgba(0, 0, 0, 0);
+    }
+}
+
+.pswp__button--close {
+    &:hover {
+        background: url("assets/photoswipe/default-skin.png") 0 0 no-repeat;
+        background-position: 0 -44px;
+    }
+}

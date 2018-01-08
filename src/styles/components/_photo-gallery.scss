@@ -1,0 +1,38 @@
+$gutter: 12px;
+
+.c-photo-gallery {
+    flex: 1;
+    margin-top: 2.5em;
+
+    @media(min-width: $bp-tablet) {
+        margin-bottom: 2.5em;
+        margin-top: 0;
+        order: 0;
+    }
+
+    &__link {
+        display: block;
+        float: left;
+        line-height: 0;
+        margin-bottom: $gutter;
+        width: 320px;
+
+        @media(orientation: landscape) {
+            &:nth-child(odd) {
+                margin-right: $gutter;
+            }
+            width: 285px;
+        }
+
+        @media(min-width: $bp-tablet) {
+            margin: 0 $gutter $gutter 0;
+            width: 172px;
+        }
+
+        &:first-child {
+            @media(min-width: $bp-tablet) {
+                width: 320px;
+            }
+        }
+    }
+}
