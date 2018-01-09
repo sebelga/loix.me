@@ -1,0 +1,52 @@
+.container--tabs {
+	.nav-tabs {
+		float: left;
+		width: 100%;
+		margin: 0;
+		list-style-type: none;
+
+		> li {
+            float: left;
+            font-size: 1.375em;
+            font-weight: 700;
+            margin-bottom: -1px;
+            margin-right: $unit;
+
+			> a {
+                color: #bbb;
+				float: left;
+				margin-right: 2px;
+				line-height: 1.42857143;
+				padding: 10px;
+			}
+
+			&.active {
+				> a,
+				> a:hover,
+				> a:focus {
+					color: inherit;
+					cursor: default;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		float: left;
+		width: 100%;
+
+		> .tab-pane {
+			display: none;
+
+			&.active {
+				display: block;
+				padding: 2.5% 10px;
+			}
+		}
+
+		> .active {
+			display: block;
+		}
+	}
+}

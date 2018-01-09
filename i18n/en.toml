@@ -3,3 +3,8 @@ other = "Projects"
 
 [currentLearning]
 other = "Currently learning"
+
+[about-headline-A]
+other = "Hello! I'm"
+[about-headline-B]
+other = "I am passionate about creating beautiful applications with unique user experience.<br/>I am busy finding solutions to problems."

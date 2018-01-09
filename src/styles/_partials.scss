@@ -8,5 +8,35 @@
 .footer-container {
     &__menu-container {
         display: flex;
+
+        .social-menu-container {
+            flex: 1;
+        }
+
+        .lang-menu-container {
+            flex: 1;
+
+            .lang-menu {
+                font-size: .8em;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: right;
+
+                li {
+                    display: inline-block;
+                    line-height: 30px;
+                    margin-right: $unit / 2;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            a {
+                font-style: normal;
+            }
+        }
     }
 }

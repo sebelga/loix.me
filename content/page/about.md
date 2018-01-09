@@ -2,6 +2,14 @@
 title: "About"
 comments: false
 menu: main
+words: [
+    "a developer.",
+    "an analyst.",
+    "a dreamer.",
+    "passionate.",
+    "an entrepreneur.",
+    "a little belgian."
+]
 ---
 
 A senior fullstack Javascript developer passionate about user experience with a meticulous attention to detail, striving to create unique interactive experiences across the different screens. Excellent problem solver and great communicator.

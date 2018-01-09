@@ -1,14 +1,14 @@
 <section id='currently-learning' class='home-section'>
-    <header>
+    <!-- <header>
         <h2 class='home-section-title title'>
             {{- i18n "currentLearning" -}}
         </h2>
-    </header>
+    </header> -->
 
-    <ul>
+    <div class='list-container'>
         {{ $data := index .Site.Data .Site.Language.Lang }}
         {{ range $data.learning.current }}
-        <li>
+        <li class="list">
             {{ .title }}
             <p class="currently-learning__descr">{{ .descr }}</p>
         </li>

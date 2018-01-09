@@ -1,30 +1,36 @@
 {{ partial "header" . }}
 
 <main id='main' class='main'>
-  {{ if .Content }}
-  <article class='entry'>
-    {{ partial "entry/content" . }}
-  </article>
-  {{ end }}
+    {{ if .Content }}
+    <article class='entry'>
+        {{ partial "entry/content" . }}
+    </article>
+    {{ end }}
 
-  <div class='home-sections-container'>
-      <div class='home-sections'>
-        {{ partial "home/current_projects" . }}
-      </div>
+    <div class="content-wrapper container--tabs home-sections-container">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#tab-1">{{- i18n "projects" -}}</a>
+            </li>
+            <li class="">
+                <a href="#tab-2">{{- i18n "recentPosts" -}}</a>
+            </li>
+            <li class="">
+                <a href="#tab-3">{{- i18n "currentLearning" -}}</a>
+            </li>
+        </ul>
+        <div class='tab-content home-sections'>
+            <div id="tab-1" class="tab-pane active"> 
+            {{ partial "home/current_projects" . }}
+            </div>
+            <div id="tab-2" class="tab-pane">
+                {{ partial "home/recent_posts" . }}
+            </div>
+            <div id="tab-3" class="tab-pane">
+                {{ partial "home/current_learning" . }}
+            </div>
+        </div>
     </div>
-
-  <div class='home-sections-container'>
-    <div class='home-sections'>
-      {{ partial "home/recent_posts" . }}
-    </div>
-  </div>
-
-  <div class='home-sections-container'>
-    <div class='home-sections'>
-      {{ partial "home/current_learning" . }}
-    </div>
-  </div>
-
 </main>
 
 {{ partial "footer" . }}

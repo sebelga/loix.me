@@ -84,7 +84,6 @@ hrefTargetBlank = true
 hardLineBreak = true
 
 [languages]
-# edit this block for your own language
 [languages.en]
 lang = "en"
 languageName = "English"

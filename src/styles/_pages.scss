@@ -1,4 +1,21 @@
 //---- home
+
+.home-sections-container {
+    &:before {
+        @include block-separation($gray);
+        align-self: flex-start;
+    }
+}
+
+.home-sections {
+    padding: 0 ;
+
+    &:before {
+        content: none !important;
+        margin: 0 !important;
+    }
+}
+
 .home-section {
     margin-bottom: 3em;
 }
