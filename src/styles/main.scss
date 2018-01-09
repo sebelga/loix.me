@@ -7,11 +7,12 @@
 //---- theme
 @import "../../themes/minimo/src/stylesheets/style";
 
+@import "mixins";
 @import "overwrite";
 @import "pages";
 @import "partials";
-
 @import "components/photo-gallery";
+@import "components/rotate-words";
 
 body {
     overflow-y: scroll;

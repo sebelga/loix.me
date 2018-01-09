@@ -1,0 +1,51 @@
+.rotate-words {
+    display: inline-block;
+    min-width: 180px;
+    min-height: 28px;
+    text-align: left;
+    text-indent: 1px;
+
+    span {
+        letter-spacing: -2px;
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        font-weight: 800;
+
+        &.rotate-in {
+            animation: rotateInWord .5s linear forwards;
+        }
+
+        &.rotate-out {
+            animation: rotateOutWord .5s linear forwards;
+        }
+
+        &:first-child {
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes rotateInWord {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@keyframes rotateOutWord {
+    0% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+}

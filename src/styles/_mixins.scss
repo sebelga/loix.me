@@ -1,0 +1,9 @@
+
+@mixin block-separation ($color: #ffcd00) {
+    border-bottom: 0.125em solid $color;
+    content: '';
+    display: block;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    width: 4em;
+}

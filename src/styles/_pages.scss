@@ -1,4 +1,4 @@
-//---- home (list)
+//---- home
 .home-section {
     margin-bottom: 3em;
 }
@@ -20,5 +20,18 @@
 .currently-learning {
     &__descr {
         font-size: $text-small;
+    }
+}
+
+
+//---- about
+.c-headline-about {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+
+    + .entry-content:before {
+        @include block-separation($gray);
     }
 }
