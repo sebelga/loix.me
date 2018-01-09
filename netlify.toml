@@ -1,3 +1,6 @@
 [build]
   publish = "public"
   command = "npm run build:draft"
+
+[context.production]
+  command = "npm run build:prod"
