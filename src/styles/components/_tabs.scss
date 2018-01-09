@@ -8,7 +8,6 @@
 		> li {
             float: left;
             font-size: 1.375em;
-            font-weight: 700;
             margin-bottom: -1px;
             margin-right: $unit;
 
@@ -21,6 +20,8 @@
 			}
 
 			&.active {
+                font-weight: 700;
+
 				> a,
 				> a:hover,
 				> a:focus {

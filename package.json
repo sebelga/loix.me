@@ -37,6 +37,7 @@
     "resolve-url-loader": "2.2.1",
     "rimraf": "2.6.2",
     "sass-loader": "^6.0.6",
+    "uglifyjs-webpack-plugin": "1.1.6",
     "webpack": "^3.10.0"
   },
   "dependencies": {

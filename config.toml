@@ -30,9 +30,8 @@ customCSS = [
     "vendors/photoswipe/default-skin/default-skin.css"
 ]
 customJS = [
-    "vendors/photoswipe/photoswipe.min.js",
-    "vendors/photoswipe/photoswipe-ui-default.min.js"
 ]
+
 gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]

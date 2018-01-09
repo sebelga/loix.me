@@ -27,4 +27,4 @@ export default () => {
             myTabs[i].addEventListener('click', onTabClick);
         }
     }
-}
+};

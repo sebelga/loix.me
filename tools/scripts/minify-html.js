@@ -6,14 +6,10 @@ const { minify } = require('html-minifier');
 
 const folder = path.join(process.cwd(), 'public');
 
-const result = minify('<p title="blah" id="moo">foo</p>', {
-    removeAttributeQuotes: true
-});
-
 const options = {
-    removeEmptyElements: true,
+    removeEmptyElements: false,
     removeComments: true,
-    collapseWhitespace: true
+    collapseWhitespace: true,
 };
 
 glob('**/*.html', { cwd: folder, nodir: true }, (err, files) => {

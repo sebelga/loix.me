@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const AssetsPlugin = require('assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = (env) => {
     if (typeof env === 'undefined' || typeof env.NODE_ENV === 'undefined') {
@@ -21,6 +22,15 @@ module.exports = (env) => {
 
     const extractCSS = new ExtractTextPlugin({
         filename: getPath => getPath('css/[name].[contenthash:8].css').replace('css', '../css'),
+    });
+
+    // const vendorsChunk = new webpack.optimize.CommonsChunkPlugin({
+    //     name: 'vendors',
+    //     minChunks: Infinity,
+    // });
+
+    const uglifyJS = new UglifyJsPlugin({
+        sourceMap: true,
     });
 
     const assetsManifest = new AssetsPlugin({
@@ -45,6 +55,9 @@ module.exports = (env) => {
 
     const config = {
         entry: {
+            // vendors: [
+            //     'es6-docready',
+            // ],
             main: path.join(__dirname, 'src/scripts', 'main.js'),
         },
         output: {
@@ -82,6 +95,7 @@ module.exports = (env) => {
                                             browsers: ['> 1%', 'last 2 versions'],
                                         }),
                                     ],
+                                    sourceMap: true,
                                 },
                             },
                             'resolve-url-loader',
@@ -91,14 +105,15 @@ module.exports = (env) => {
                 },
                 {
                     test: /\.jpe?g$|\.gif$|\.png$/i,
-                    loader: 'file-loader?name=/assets/img/[name].[ext]',
+                    loader: 'file-loader?name=/../img/[name].[ext]',
                 },
             ],
         },
         resolve: {
             extensions: ['*', '.js', '.scss'],
         },
-        plugins: [define, extractCSS, assetsManifest],
+        plugins: [define, uglifyJS, extractCSS, assetsManifest],
+        devtool: 'source-map',
     };
 
     if (env.NODE_ENV === 'prod') {

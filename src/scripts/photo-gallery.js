@@ -1,3 +1,5 @@
+import PhotoSwipe from 'photoswipe';
+import PhotoSwipeUIdefault from 'photoswipe/dist/photoswipe-ui-default';
 
 // find nearest parent element
 const closest = (el, fn) => (
@@ -72,7 +74,7 @@ const initPhotoswipe = (gallerySelector) => {
             options.showAnimationDuration = 0;
         }
 
-        const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUIdefault, items, options);
         gallery.init();
     };
 
