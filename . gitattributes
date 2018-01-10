@@ -1,2 +1,15 @@
-* text=auto eol=lf
+# Autodetect text files
+* text=auto
+eol=lf
+
+# ...Unless the name matches the following
+
+# Definitively text files
+*.txt text
+*.c text
+*.h text
+
+# Ensure those won't be messed up with
+*.jpg binary
+*.data binary
 
