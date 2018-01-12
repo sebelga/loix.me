@@ -1,11 +1,10 @@
 [[current]]
     title = "golang"
     descr = """
-        Even though I am a front-end engineer I like to expand my knowledge of the stack.
-        Aside... golang is a pretty cool language to learn! :)"""
+        Even though I am a front-end engineer I like to expand my knowledge around the stack. I also think that it is important for a software engineer to learn a strongly typed language.
+        Aside... golang is a pretty damn cool language to learn! :)"""
 
 [[current]]
     title = "GraphQL"
     descr = """
-        Optimize API calls with a good data layer in front of the backend datastore has always been something I gave a lot of attention.
-        GraphQL is a great language to achieve that!"""
+        Optimize API calls with a good data layer between the backend and the frontend has always been something I gave a lot of attention to. GraphQL is the pefect language to achieve just that!"""

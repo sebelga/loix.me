@@ -1,15 +1,21 @@
 ---
 title: "Silent drop"
-date: "2017-01-10"
-draft: true
-shortDescr: "Some short text for Silent drop"
-tags: ["Angular", "Node.js"]
+date: "2016-12-01"
+draft: false
+shortDescr: "Angular Blog / movies platform with a CMS in React"
+tags: ["Angular", "React", "Redux", "Node.js", "rxjs"]
 current: true
 gallery: true
 ---
 
-Silent drop is a personal project of social platform. It is currently in active development but the first MVP includes a Blog and a "Pin wall" feature to share video, images, quotes and texts. The server is a Google App Engine Flexible Environment and uses the Google Datastore as database.
+Silent drop is a personal project that I created to share content about environment, personal growth and the sharing economy. It is still in development but the first version includes a "Blog", a "Pin wall" (to share video, images, quotes and texts) and a "Movies" section to share long duration videos.
 
-Technically this project allows me to learn a lot about Cloud Services, NoSQL databse (Google Datastore), node.js + Express, REST API design and Continuous Integration with Jenkins.
+The project has two main parts:  
 
-The project has two main parts: the platform itself and Content Management System, both written in Angular 4+
+* The platform itself written in Angular
+* A Content Management System written in React.  
+
+Technically this project allows me to learn about Cloud Services, NoSQL database, backend programming, REST API and data layer design and Continuous Integration.
+
+#### Stack
+AWS (EC2, S3, Route 53), Google Datastore, Node.js + Express, Angular, React, Nginx, Mailgun, Imgix, Jenkins.

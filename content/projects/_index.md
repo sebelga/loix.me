@@ -6,8 +6,10 @@ categories:
   -
 tags:
   -
-draft: true
+draft: false
 menu:
     main:
         weight: 50
 ---
+
+These are the projects I am currently working on. If you want to see more [here are some other projects](/archive/) I colaborated on.

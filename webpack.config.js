@@ -112,14 +112,13 @@ module.exports = (env) => {
         resolve: {
             extensions: ['*', '.js', '.scss'],
         },
-        plugins: [define, uglifyJS, extractCSS, assetsManifest],
+        plugins: [define, extractCSS, assetsManifest],
         devtool: 'source-map',
     };
 
     if (env.NODE_ENV === 'prod') {
-        config.plugins.push(cleanBuild);
+        config.plugins = [...config.plugins, uglifyJS, cleanBuild];
     }
 
     return config;
 };
-

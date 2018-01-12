@@ -17,3 +17,7 @@ A senior fullstack Javascript developer passionate about user experience with a 
 Over 18 years developing complex applications in high-pressure environments with experience in dealing directly with new and existing clients. I put a strong emphasis on accessibility, performance and scalability, writing DRY and clean code.
 
 Maintainer of a Mongoose clone for the Google Datastore [see repo](https://github.com/sebelga/gstore-node)
+
+#### Current position
+
+I am currently working at the European Commission as a front-end engineer (since January 2017).

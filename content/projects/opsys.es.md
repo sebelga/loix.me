@@ -4,7 +4,7 @@ title: "Opsys"
 authors: []
 draft: true
 shortDescr: "Descripción de Opsys"
-current: false
+current: true
 ---
 
 Description of project Opsys
