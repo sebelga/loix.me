@@ -42,13 +42,34 @@
 
 
 //---- about
-.c-headline-about {
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 1.4;
-    text-align: center;
 
-    + .entry-content:before {
-        @include block-separation($gray);
+.c-about {
+    &__pict {
+        margin-bottom: 2em;
+        text-align: center;
+
+        img {
+            border: 2px solid $gray;
+            border-radius: 50%;
+            max-height: 200px;
+        }
+    }
+
+    &__headline {
+        font-size: 1.5em;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    &__header {
+        + .entry-content:before {
+            @include block-separation($gray);
+        }
+    }
+
+    &__actions {
+        margin-top: 3em;
     }
 }
+

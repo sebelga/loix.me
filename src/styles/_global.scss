@@ -1,0 +1,62 @@
+body {
+    overflow-y: scroll;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: $max-content-width;
+    padding-left: $unit;
+    padding-right: $unit;
+}
+
+.single-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+// headings
+h3 {
+    font-size: 1.25em;
+}
+h4 {
+    font-size: 1.1em;
+}
+
+// buttons
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+[role=btn] {
+    border: none !important;
+    display: inline-block;
+    padding: 0.625em 0.875em;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #212121;
+    background: #ffcd00;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+    align-items: flex-start;
+    text-align: center;
+
+    &:hover {
+        background: #212121;
+        color: #ffcd00;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 1.125em;
+    }
+}
+
+// images
+img {
+    max-width: 100%;
+    height: auto;
+}

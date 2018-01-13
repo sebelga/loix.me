@@ -12,12 +12,18 @@ words: [
 ]
 ---
 
-A senior fullstack Javascript developer passionate about user experience with a meticulous attention to detail, striving to create unique interactive experiences across the different screens. Excellent problem solver and great communicator.
+A senior frontend engineer passionate about user experience with a meticulous attention to detail, striving to create unique interactive experiences across the different screens. Excellent problem solver and great communicator.
 
-Over 18 years developing complex applications in high-pressure environments with experience in dealing directly with new and existing clients. I put a strong emphasis on accessibility, performance and scalability, writing DRY and clean code.
+Over 18 years developing complex applications in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building Single Page Applications by making sure their software is optimized, well-tested, maintainable and scalable.
 
-Maintainer of a Mongoose clone for the Google Datastore [see repo](https://github.com/sebelga/gstore-node)
+I also work on the backend with Node.js, designing and building REST API and I am currently learning GraphQL and golang.
+
+Maintainer of a *mongoose* clone for the Google Datastore ([see repo](https://github.com/sebelga/gstore-node)).
 
 #### Current position
 
-I am currently working at the European Commission as a front-end engineer (since January 2017).
+Since January 2017 I am working at the European Commission as a front-end engineer and architect.
+
+<div class="c-about__actions">
+    <a role="btn" href="/cv-sebastien-loix.pdf" target="_blank">Download CV</a>
+</div>

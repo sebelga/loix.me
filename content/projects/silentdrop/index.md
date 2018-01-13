@@ -17,5 +17,7 @@ The project has two main parts:
 
 Technically this project allows me to learn about Cloud Services, NoSQL database, backend programming, REST API and data layer design and Continuous Integration.
 
+---
+
 #### Stack
 AWS (EC2, S3, Route 53), Google Datastore, Node.js + Express, Angular, React, Nginx, Mailgun, Imgix, Jenkins.

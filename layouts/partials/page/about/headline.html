@@ -1,15 +1,20 @@
 {{ if eq .Title  "About" }}
-<div class="content-wrapper c-headline-about">
-    {{ i18n "about-headline-A" }}
-    <span class="rotate-words">
-        {{ range $i, $v := .Params.words }}
-            {{ if eq $i 0 }}
-            <span class="rotate-in">{{ $v }}</span>
-            {{ else }}
-            <span class="rotate-out">{{ $v }}</span>
+<div class="content-wrapper c-about__header">
+    <div class="c-about__pict">
+        <img src="/assets/img/sebastien.jpg" alt="Sébastien Loix - Frontend engineer">
+    </div>
+    <div class="c-about__headline">
+        {{ i18n "about-headline-A" }}
+        <span class="rotate-words">
+            {{ range $i, $v := .Params.words }}
+                {{ if eq $i 0 }}
+                <span class="rotate-in">{{ $v }}</span>
+                {{ else }}
+                <span class="rotate-out">{{ $v }}</span>
+                {{ end }}
             {{ end }}
-        {{ end }}
-    </span><br />
-    {{ i18n "about-headline-B" | safeHTML }}
+        </span><br />
+        {{ i18n "about-headline-B" | safeHTML }}
+    </div>
 </div>
 {{ end }}
