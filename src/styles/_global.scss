@@ -22,6 +22,16 @@ h4 {
     font-size: 1.1em;
 }
 
+// links
+.list-item a {
+    border-bottom: 0.125em dashed $gray;
+    display: inline-block;
+    margin-bottom: 4px;
+    &:hover {
+        border-bottom-color: $yellow;
+    }
+}
+
 // buttons
 button {
     &:hover {
