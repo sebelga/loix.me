@@ -9,8 +9,14 @@
 
 //---- entry
 .entry-content {
+    order: 0;
+
     @media(min-width: $bp-tablet) {
         order: 1;
+
+        & + .c-photo-gallery {
+            order: 0;
+        }
     }
 }
 

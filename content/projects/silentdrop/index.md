@@ -2,8 +2,9 @@
 title: "Silent drop"
 date: "2016-12-01"
 draft: false
-shortDescr: "Angular Blog / movies platform with a CMS in React"
-tags: ["Angular", "React", "Redux", "Node.js", "rxjs"]
+shortDescr: "Angular Blog/Movies platform + a CMS in React"
+categories: ["Fullstack dev"]
+tags: ["Angular", "React", "Redux", "Node.js", "rxjs", "AWS", "Jenkins"]
 current: true
 gallery: true
 ---
@@ -12,10 +13,10 @@ Silent drop is a personal project that I created to share content about environm
 
 The project has two main parts:  
 
-* The platform itself written in Angular
-* A Content Management System written in React.  
+* The platform itself written in _Angular_ (2+)
+* A Content Management System written in _React_  
 
-Technically this project allows me to learn about Cloud Services, NoSQL database, backend programming, REST API and data layer design and Continuous Integration.
+Technically this project allows me to learn about Cloud Services, NoSQL DB, fullstack development, REST API design, data modeling and Continuous Integration/Deployment.
 
 ---
 

@@ -3,6 +3,7 @@
 //---- vendors
 // @import "../../node_modules/photoswipe/src/css/main";
 // @import "../../node_modules/photoswipe/src/css/default-skin/default-skin";
+@import "../../static/vendors/plyr/src/scss/plyr";
 
 //---- theme
 @import "../../themes/minimo/src/stylesheets/style";
@@ -12,6 +13,7 @@
 @import "pages";
 @import "partials";
 @import "components/photo-gallery";
+@import "components/video-player";
 @import "components/rotate-words";
 @import "components/tabs";
 @import "global";

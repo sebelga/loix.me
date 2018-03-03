@@ -1,10 +1,12 @@
 [[current]]
     title = "golang"
+    uri = "https://golang.org/"
     descr = """
         Even though I am a front-end engineer I like to expand my knowledge around the stack. I also think that it is important for a software engineer to learn a strongly typed language.
         Aside... golang is a pretty damn cool language to learn! :)"""
 
 [[current]]
     title = "GraphQL"
+    uri = "http://graphql.org/"
     descr = """
         Optimize API calls and data structure to improve performance is something I give a lot of attention to. GraphQL is the pefect language to achieve just that!"""

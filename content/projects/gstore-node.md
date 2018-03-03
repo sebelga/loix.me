@@ -2,14 +2,23 @@
 title: "gstore-node"
 date: "2017-07-01"
 draft: false
-shortDescr: "'mongoose' clone for the Google Datastore"
+shortDescr: "'Mongoose' clone for the Google Datastore"
+categories: ["Open Source"]
+tags: ["Node.js", "Goolge Datastore", "mocha", "chai"]
 current: true
 ---
 
-gstore-node is a 'mongoose' clone for the Google Datastore. With it we can create Schemas to model the entities to be saved in the Datastore.
+<img src="https://raw.githubusercontent.com/sebelga/gstore-node/master/logo/logo.png">
 
-The entities are then automatically validates (their properties kind and value) before being saved.
+gstore-node is a _Mongoose_ clone for the [Google Datastore](https://cloud.google.com/datastore/docs/concepts/overview). This module let the developers create Schemas to model the entities to be saved in the Datastore.
 
-Custom methods, virtual properties and "hooks" (middleware) can also be added on the Schemas.
+With those Schemas gstore node can then validate the entity data (properties _type_ and _value_) to be saved in the Datastore.
 
-[github repository](https://github.com/sebelga/gstore-node)
+Its other main features are:  
+
+* Custom methods on entities
+* virtual properties
+* shortcut queries
+* Middleware functions ("hooks") executed before and after saving/deleting entities
+
+See the [github repository](https://github.com/sebelga/gstore-node)

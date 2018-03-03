@@ -3,11 +3,11 @@ $gutter: 12px;
 .c-photo-gallery {
     flex: 1;
     margin-top: 2.5em;
+    order: 1;
 
     @media(min-width: $bp-tablet) {
         margin-bottom: 2.5em;
         margin-top: 0;
-        order: 0;
     }
 
     &__link {
@@ -26,7 +26,7 @@ $gutter: 12px;
 
         @media(min-width: $bp-tablet) {
             margin: 0 $gutter $gutter 0;
-            width: 172px;
+            width: 170px;
         }
 
         &:first-child {

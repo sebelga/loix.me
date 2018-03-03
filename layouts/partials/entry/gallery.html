@@ -5,7 +5,7 @@
     <a
         href="{{ strings.Replace .RelPermalink "-small" "" }}"
         itemprop="contentUrl"
-        data-size="1200x765"
+        data-size="{{ cond (isset ($.Params) "galleryimgratio") $.Params.galleryImgRatio "1200x765" }}"
         data-index="{{ div $index 2 }}"
         class="c-photo-gallery__link">
         <img src="{{ .RelPermalink }}" itemprop="thumbnail" />

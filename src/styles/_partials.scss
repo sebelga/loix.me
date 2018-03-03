@@ -4,6 +4,13 @@
     font-size: $text-small;
 }
 
+//---- .current_project.html
+.current-projects {
+    &__actions {
+        margin-top: $unit;
+    }
+}
+
 //---- footer
 .footer-container {
     &__menu-container {

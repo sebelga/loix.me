@@ -6,8 +6,11 @@
     {{ partial "entry/cover" . }}
     {{ partial "entry/toc" . }}
     <div class="single-content-wrapper">
-        {{ partial "entry/content" . }}
-        {{ partial "entry/gallery" . }}
+      {{ if .Params.video }}
+      {{ partial "entry/video-player" . }}
+      {{ end }}
+      {{ partial "entry/content" . }}
+      {{ partial "entry/gallery" . }}
     </div>
     {{ partial "entry/footer" . }}
   </article>

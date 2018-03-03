@@ -17,7 +17,17 @@ const initPhotoswipe = (gallerySelector) => {
         for (let i = 0; i < numNodes; i += 1) {
             linkEl = linkElements[i];
 
-            size = linkEl.getAttribute('data-size').split('x');
+            /**
+             * Check if the target big image url contains image dimensions
+             */
+            size = /(\d+)x(\d+).jpg$/.exec(linkEl.href);
+            if (size) {
+                // It does contain the image dimensions
+                size = [size[1], size[2]];
+            } else {
+                // We get the image dimension from the data-size attribue (same for all images)
+                size = linkEl.getAttribute('data-size').split('x');
+            }
 
             const item = {
                 src: linkEl.getAttribute('href'),

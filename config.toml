@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Front-end engineer"
+description = "Senior Front-end engineer"
 title404 = "Nothing's here!"
 
 [params.assets]

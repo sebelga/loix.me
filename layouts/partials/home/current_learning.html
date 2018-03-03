@@ -7,11 +7,13 @@
 
     <div class='list-container'>
         {{ $data := index .Site.Data .Site.Language.Lang }}
-        {{ range $data.learning.current }}
-        <li class="list">
-            {{ .title }}
-            <p class="currently-learning__descr">{{ .descr }}</p>
-        </li>
-        {{ end }}
+        <ul class='list'>
+            {{ range $data.learning.current }}
+            <li class="list-item">
+                <a href="{{ .uri }}" target="_blank">{{ .title }}</a>
+                <p class="currently-learning__descr">{{ .descr }}</p>
+            </li>
+            {{ end }}
+        </ul>
     </ul>
 </section>
