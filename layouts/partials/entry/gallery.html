@@ -4,6 +4,10 @@
     {{ if in $elem.RelPermalink "small" }}
     <a
         href="{{ strings.Replace .RelPermalink "-small" "" }}"
+        data-check="{{ $index }}"
+        {{ if $.Params.heighttumbs }}
+        style="min-height: {{ index $.Params.heighttumbs $index }};"
+        {{ end }}
         itemprop="contentUrl"
         data-size="{{ cond (isset ($.Params) "galleryimgratio") $.Params.galleryImgRatio "1200x765" }}"
         data-index="{{ div $index 2 }}"

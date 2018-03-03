@@ -7,6 +7,7 @@ categories: ["Fullstack dev"]
 tags: ["Angular", "React", "Redux", "Node.js", "rxjs", "AWS", "Jenkins"]
 current: true
 gallery: true
+heightTumbs: ['auto', false, 'auto', false, '210px', false, 'auto', false, 'auto']
 ---
 
 Silent drop is a personal project that I created to share content about environment, personal growth and the sharing economy. It is still in development but the first version includes a "Blog", a "Pin wall" (to share video, images, quotes and texts) and a "Movies" section to share long duration videos.

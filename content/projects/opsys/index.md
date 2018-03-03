@@ -3,7 +3,7 @@ title: "Opsys"
 date: "2018-01-01"
 authors: []
 categories: ["Front-end dev", "Front-end architecture"]
-tags: ["Angular", "Redux", "rxjs", "Node.js", "karma", "jasmine", "SystemJS"]
+tags: ["Angular", "Redux", "rxjs", "Node.js", "Jasmine", "SystemJS"]
 draft: false
 current: true
 shortDescr: "Angular (5+) application for the European Commission"

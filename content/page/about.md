@@ -1,7 +1,9 @@
 ---
 title: "About"
 comments: false
-menu: main
+menu:
+    main:
+        weight: 75
 words: [
     "a developer.",
     "an analyst.",
@@ -27,5 +29,5 @@ I am the maintainer of a few Open Source projects, the main one being a [_Mongoo
 Since January 2017 I am working at the European Commission as a senior front-end engineer/architect.
 
 <div class="c-about__actions">
-    <a role="btn" href="/cv-sebastien-loix.pdf" target="_blank">Download my CV</a>
+    <a role="btn" href="/sebastien-loix-cv.pdf" target="_blank">Download my CV</a>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Sanitas"
-date: "2016-01-01"
+date: "2017-11-01"
 categories: ["Front-end dev", "Front-end architecture"]
 tags: ["AngularJS", "HTML5", "CSS3", "gulp"]
 draft: false

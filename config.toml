@@ -63,7 +63,7 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-email = "sebastian@loix.me"
+email = "sebastien@loix.me"
 github = "sebelga"
 linkedin = "sloix"
 
