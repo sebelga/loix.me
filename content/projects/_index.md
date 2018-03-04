@@ -12,4 +12,4 @@ menu:
         weight: 50
 ---
 
-These are the projects I am **currently** working on. In the archive you will find some [other projects](/archive/) I collaborated on.
+These are the projects I am _currently_ working on. In the archive you will find some [other projects](/archive/) I collaborated on.

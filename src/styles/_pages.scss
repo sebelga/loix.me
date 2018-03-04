@@ -4,6 +4,7 @@
     &:before {
         @include block-separation($gray);
         align-self: flex-start;
+        border-bottom: 0;
     }
 }
 

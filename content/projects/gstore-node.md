@@ -6,6 +6,7 @@ shortDescr: "'Mongoose' clone for the Google Datastore"
 categories: ["Open Source"]
 tags: ["Node.js", "Goolge Datastore", "mocha", "chai"]
 current: true
+featured: true
 ---
 
 <img src="https://raw.githubusercontent.com/sebelga/gstore-node/master/logo/logo.png">

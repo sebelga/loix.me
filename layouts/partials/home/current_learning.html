@@ -6,12 +6,22 @@
     </header> -->
 
     <div class='list-container'>
-        {{ $data := index .Site.Data .Site.Language.Lang }}
         <ul class='list'>
+            {{ $data := index .Site.Data .Site.Language.Lang }}
             {{ range $data.learning.current }}
-            <li class="list-item">
-                <a href="{{ .uri }}" target="_blank">{{ .title }}</a>
-                <p class="currently-learning__descr">{{ .descr }}</p>
+            <li class='list-item'>
+                <article>
+                    <header class='list-item-header'>
+                        <h3 class='list-item-title'>
+                            <a href="{{ .uri }}" target="_blank">
+                                {{ .title }}
+                            </a>
+                        </h3>
+                        <p class="list-item-descr">
+                            {{ .descr }}
+                        </p>
+                    </header>
+                </article>
             </li>
             {{ end }}
         </ul>

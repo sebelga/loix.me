@@ -6,6 +6,7 @@ shortDescr: "Angular Blog/Movies platform + a CMS in React"
 categories: ["Fullstack dev"]
 tags: ["Angular", "React", "Redux", "Node.js", "rxjs", "AWS", "Jenkins"]
 current: true
+featured: true
 gallery: true
 heightTumbs: ['auto', false, 'auto', false, '210px', false, 'auto', false, 'auto']
 ---

@@ -6,10 +6,12 @@
 		list-style-type: none;
 
 		> li {
+            border-bottom: 2px solid $light-gray;
             float: left;
             font-size: 1.375em;
             margin-bottom: -1px;
             margin-right: 1em;
+            padding-bottom: 5px;
 
 			> a {
                 color: #bbb;
@@ -19,6 +21,7 @@
 			}
 
 			&.active {
+                border-color: black;
                 font-weight: 700;
 
 				> a,

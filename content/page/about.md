@@ -14,15 +14,15 @@ words: [
 ]
 ---
 
-A senior frontend engineer passionate about user experience with a meticulous attention to detail, striving to create unique interactive experiences across the different screens. Excellent problem solver and great communicator.
+A senior fron-tend engineer passionate about user experience with a meticulous attention to detail, striving to create **unique interactive experiences** across the different screens. Excellent problem solver and great communicator.
 
-Over 18 years developing complex applications in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building modern Web Applications by making sure their software is optimized, well-tested, maintainable and scalable.
+Over 18 years **developing complex applications** in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building modern Web Applications by making sure their software is optimized, well-tested, maintainable and scalable.
 
-I also like to develop on the _backend_ with Node.js and Goolge Datastore/PostgreSQL/Redis. You'll probably catch me more than once designing and building REST APIs or creating scripts for continuous integration and deployment. :)
+I also like to develop on the **back-end** with Node.js and Goolge Datastore/PostgreSQL/Redis. You'll probably catch me more than once designing and building REST APIs or creating scripts for continuous integration and deployment. :)
 
-I am currently learning [GraphQL](http://graphql.org/) and [golang](https://golang.org/) (to get some _strongly typed_ language under my belt!).
+I am **currently learning** [GraphQL](http://graphql.org/) and [Go](https://golang.org/) (to get some _strongly typed_ language under my belt!).
 
-I am the maintainer of a few Open Source projects, the main one being a [_Mongoose_ clone](https://github.com/sebelga/gstore-node) for the Google Datastore.
+I am the maintainer of a few **open source projects**, the main one being a [_Mongoose_ clone](https://github.com/sebelga/gstore-node) for the Google Datastore.
 
 #### Current position
 
