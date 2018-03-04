@@ -66,9 +66,10 @@ titleSeparator = "•"
 email = "sebastien@loix.me"
 github = "sebelga"
 linkedin = "sloix"
+twitter = "sebloix"
 
 [params.social.config]
-platforms = ["github","email","linkedin"]
+platforms = ["github","email","linkedin","twitter"]
 
 [taxonomies]
 author = "authors"
