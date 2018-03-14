@@ -22,4 +22,6 @@ Its other main features are:
 * shortcut queries
 * Middleware functions ("hooks") executed before and after saving/deleting entities
 
-See the [github repository](https://github.com/sebelga/gstore-node)
+<div class="c-about__actions">
+    <a role="btn" href="https://github.com/sebelga/gstore-node" target="_blank">Go to repository</a>
+</div>

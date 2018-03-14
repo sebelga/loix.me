@@ -20,6 +20,10 @@ The project has two main parts:
 
 Technically this project allows me to learn about Cloud Services, NoSQL DB, fullstack development, REST API design, data modeling and Continuous Integration/Deployment.
 
+<div class="c-about__actions">
+    <a role="btn" href="http://silentdrop.eu" target="_blank">Go to project</a>
+</div>
+
 ---
 
 #### Stack

@@ -18,7 +18,7 @@ A senior fron-tend engineer passionate about user experience with a meticulous a
 
 Over 18 years **developing complex applications** in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building modern Web Applications by making sure their software is optimized, well-tested, maintainable and scalable.
 
-I also like to develop on the **back-end** with Node.js and Goolge Datastore/PostgreSQL/Redis. You'll probably catch me more than once designing and building REST APIs or creating scripts for continuous integration and deployment. :)
+I also develop on the **back-end** with Node.js, storing the data in different databases (Google Datastore/PostgreSQL/Redis). You'll probably catch me more than once designing and building REST APIs or creating scripts for continuous integration and deployment. :)
 
 I am **currently learning** [GraphQL](http://graphql.org/) and [Go](https://golang.org/) (to get some _strongly typed_ language under my belt!).
 
@@ -27,7 +27,3 @@ I am the maintainer of a few **open source projects**, the main one being a [_Mo
 #### Current position
 
 Since January 2017 I am working at the European Commission as a senior front-end engineer/architect.
-
-<div class="c-about__actions">
-    <a role="btn" href="/sebastien-loix-cv.pdf" target="_blank">Download my CV</a>
-</div>
