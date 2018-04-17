@@ -4,6 +4,14 @@
 .main-menu {
     li {
         margin-right: 1em;
+
+        &:last-child {
+            display: none;
+
+            @media(min-width: $bp-tablet) {
+                display: inline-block;
+            }
+        }
     }
 }
 
@@ -32,5 +40,16 @@
     &:hover {
         background: url("assets/photoswipe/default-skin.png") 0 0 no-repeat;
         background-position: 0 -44px;
+    }
+}
+
+// Code Highlight
+.entry-content {
+    .highlight {
+        max-width: calc(100vw - 40px);
+
+        @media(min-width: $bp-tablet) {
+            max-width: initial;
+        }
     }
 }

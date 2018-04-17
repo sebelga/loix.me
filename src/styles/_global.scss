@@ -37,7 +37,7 @@ a {
     }
 }
 
-.list-item a {
+.list-item.current-project a {
     border-bottom: 0.125em dashed $gray;
     display: inline-block;
     margin-bottom: 4px;
