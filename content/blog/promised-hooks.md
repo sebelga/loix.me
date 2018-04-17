@@ -6,6 +6,7 @@ categories: ["Open Source"]
 tags: ["Promise", "Node.js", "utility"]
 current: true
 featured: true
+canonicalCrossDomain: "https://medium.com/@sebelga/simplify-your-code-adding-hooks-to-your-promises-9e1483662dfa"
 ---
 
 For my first post I am going to write about a simple technique to help you decouple pieces of functionalities of your code: **hooks**.
