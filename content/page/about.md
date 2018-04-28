@@ -15,7 +15,7 @@ words: [
 ---
 A senior software engineer passionate about user experience with a meticulous attention to detail, striving to create **unique interactive experiences** across the different screens. Excellent problem solver and great communicator.
 
-Over 18 years **developing complex applications** in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building modern applications, making sure their software is optimized, well-tested, maintainable and scalable.
+Over 18 years **developing complex applications** in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building robust applications, making sure their software is optimized, well-tested, maintainable and scalable.
 
 Although my expertise lies in the **front-end** development, I also work on the **back-end** with Node.js.  Some of the languages/technologies I use are:  
 Javascript, React, Node.js, Typescript, Angular, rxjs, Redux, Webpack, Rollup...  
