@@ -4,10 +4,10 @@ date: "2018-04-17"
 draft: false
 categories: ["Open Source"]
 tags: ["Promise", "Node.js", "utility"]
-current: true
-featured: true
 canonicalCrossDomain: "https://medium.com/@sebelga/simplify-your-code-adding-hooks-to-your-promises-9e1483662dfa"
 ---
+
+> This article was first [posted on Medium](https://medium.com/@sebelga/simplify-your-code-adding-hooks-to-your-promises-9e1483662dfa). Please leave me your comments there, thanks!
 
 For my first post I am going to write about a simple technique to help you decouple pieces of functionalities of your code: **hooks**.
 
@@ -17,13 +17,13 @@ You are probably familiar with the hooks of [Express](https://www.npmjs.com/pack
 
 To best understand the benefits of hooks, let’s see them through an example.
 
-## Adding middlewares to the Stripe API
+# Adding middlewares to the Stripe API
 
 Let’s take the Stripe Node.js API and add some hooks to its methods.
 Imagine you have the following handler to process payments:
 
 {{< highlight go "linenos=table" >}}
-const stripe = require('stripe')('sk_test_your-token');
+const stripe = require("stripe")("sk_test_your-token");
 
 async function processPayement(amount, source, description) {
     let charge;
@@ -47,14 +47,14 @@ Wouldn’t it be nice if we were able to have a function executed right _before_
 Hooks to the rescue! To add “pre” & “post” hooks to the _charges.create()_ method we are going to use the [promised-hooks](https://www.npmjs.com/package/promised-hooks) package. I created this small library as I could not make the [hooks](https://www.npmjs.com/package/hooks) library work with a _chain_ of Promises.
 
 {{< highlight go "linenos=table" >}}
-const stripe = require('stripe')('sk_test_your-token');
-const hooks = require('promised-hooks');
+const stripe = require("stripe")("sk_test_your-token");
+const hooks = require("promised-hooks");
 
 // Add Hooks functionalities to the "stripe.charges" methods
 hooks.wrap(stripe.charges);
 
 // Add a "pre" middleware
-stripe.charges.pre('create', function preCharge({ amount, source, description, currency }) {
+stripe.charges.pre("create", function preCharge({ amount, source, description, currency }) {
     // All the arguments passed to the charges.create() method are available
 
     // Make any async call as long as it returns a *Promise*.
@@ -63,7 +63,7 @@ stripe.charges.pre('create', function preCharge({ amount, source, description, c
 });
 
 // Add a "post" middleware
-stripe.charges.post('create', function postCharge(charge) {
+stripe.charges.post("create", function postCharge(charge) {
     return myTraceService.log(`New charge ${charge.amount}`);
 });
 
@@ -92,23 +92,23 @@ Let’s do a quick refactor to keep our Stripe API hooks in a separate file.
 {{< highlight go "linenos=table" >}}
 // ./vendors/stripe.js
 
-const stripe = require('stripe')('sk_test_your-token');
-const hooks = require('promised-hooks');
+const stripe = require("stripe")("sk_test_your-token");
+const hooks = require("promised-hooks");
 
 // Add Hooks functionalities to the "stripe.charges" methods
 hooks.wrap(stripe.charges);
 
 // Add a "pre" middleware
-stripe.charges.pre('create', function preCharge({ amount, source, description, currency }) {
+stripe.charges.pre("create", function preCharge({ amount, source, description, currency }) {
     // All the arguments passed to the charges.create() method are available
 
     // Make any async call as long as it returns a *Promise*.
-    // If the async call rejects, then the "create()" method won't be executed
+    // If the async call rejects, then the "create()" method won"t be executed
     return someService.doAsyncStuff(amount, currency, description);
 });
 
 // Add a "post" middleware
-stripe.charges.post('create', function postCharge(charge) {
+stripe.charges.post("create", function postCharge(charge) {
     return myTraceService.log(`New charge ${charge.amount}`);
 });
 
@@ -117,7 +117,7 @@ module.exports = stripe;
 {{< / highlight >}}
 
 {{< highlight go "linenos=table" >}}
-const stripe = require('./vendors/stripe');
+const stripe = require("./vendors/stripe");
 
 // No changes on the processPayement
 async function processPayement(amount, source, description) {
@@ -139,7 +139,7 @@ async function processPayement(amount, source, description) {
 
 As you can see, adding “pre” and “post” functionalities to an API is easy and can greatly help the separation of concerns of your code.
 
-## Where hooks really shine
+# Where hooks really shine
 
 Hooks are more useful when importing an API that **we don’t control**. Let’s continue with the example from above. Imagine that _Team A_ has finished working on its “billing” npm package. 
 The code below is their small package to abstract the payment process. We can see that they haven’t forgotten to wrap their api with hooks to allow custom functionalities to be added.
@@ -147,10 +147,10 @@ The code below is their small package to abstract the payment process. We can se
 {{< highlight go "linenos=table" >}}
 // your-billing-package
 
-const stripe = require('stripe')('sk_test_token');
-const hooks = require('promised-hooks');
+const stripe = require("stripe")("sk_test_token");
+const hooks = require("promised-hooks");
 
-const { notify } = require('some-notification-package');
+const { notify } = require("some-notification-package");
 
 async function processPayement(amount, source, description, currency) {
     return new Promise((resolve, reject) => {
@@ -169,7 +169,7 @@ async function processPayement(amount, source, description, currency) {
         }
 
         try {
-            notify('New payement received', { amount, source, description });
+            notify("New payement received", { amount, source, description });
         } catch(e) {
             // Silently fail
         }
@@ -188,21 +188,20 @@ hooks.wrap(api);
 module.exports = api;
 {{< / highlight >}}
 
-
 Now it’s your turn. You are working on a new project that will accept payments. After a few months in the project your are asked to block payments under 1 dollar and only allow payment by Card.
 A good place to put your new business rules is in a middleware (just like Express allows us to add middleware to prevent to access a route).
 
 {{< highlight go "linenos=table" >}}
 // ./middleware/billing.js
 
-const billingApi = require('your-billing-package');
+const billingApi = require("your-billing-package");
 
 /**
  * Dont' allow payment below 1$
  */
 function validateAmount(amount, source, description, currency) {
     if (amount < 1) {
-        return Promise.reject('Payement not allowed. The minimum charge is 1.00$.');
+        return Promise.reject("Payement not allowed. The minimum charge is 1.00$.");
     }
     return Promise.resolve();
 }
@@ -211,15 +210,15 @@ function validateAmount(amount, source, description, currency) {
  * Only allow payement by Card
  */
 function validateSource(amount, source) {
-    if (source !== 'Card') {
-        return Promise.reject('Only "Card" payement are allowed.')
+    if (source !== "Card") {
+        return Promise.reject("Only Card payement are allowed.")
     }
     return Promise.resolve();
 }
 
 // Add middleware to execute before any payement
 // These are rules specific to this application
-billingApi.pre('processPayement', [validateAmount, validateSource]);
+billingApi.pre("processPayement", [validateAmount, validateSource]);
 {{< / highlight >}}
 
 Just like that you added two business rules to your application that will block payments below $1 or payment not made by Card. And you didn’t have to modify any of your code.

@@ -1,5 +1,17 @@
 //---- home
 
+.home {
+    .nav-tabs {
+        li:last-child {
+            display:none;
+
+            @media(min-width: $bp-tablet) {
+                display: block;
+            }
+        }
+    }
+}
+
 .home-sections-container {
     &:before {
         @include block-separation($gray);
