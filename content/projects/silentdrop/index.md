@@ -1,6 +1,6 @@
 ---
 title: "Silent drop"
-date: "2016-12-01"
+date: "2018-05-01"
 draft: false
 shortDescr: "Angular Blog/Movies platform + a CMS in React"
 categories: ["Fullstack dev"]

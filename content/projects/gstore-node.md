@@ -1,6 +1,6 @@
 ---
 title: "gstore-node"
-date: "2017-07-01"
+date: "2018-04-01"
 draft: false
 shortDescr: "'Mongoose' clone for the Google Datastore"
 categories: ["Open Source"]
