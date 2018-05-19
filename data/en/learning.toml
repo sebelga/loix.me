@@ -9,4 +9,4 @@
     title = "GraphQL"
     uri = "http://graphql.org/"
     descr = """
-        Optimize API calls and data structure to improve performance is something I give a lot of attention to. GraphQL is the pefect language to achieve just that!"""
+        Optimize API calls and the data fetching layer to improve applications responsiveness is something I give a lot of attention to. GraphQL is the pefect language to achieve just that!"""
