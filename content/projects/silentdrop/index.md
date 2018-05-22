@@ -13,12 +13,18 @@ heightTumbs: ['auto', false, 'auto', false, '210px', false, 'auto', false, 'auto
 
 Silent drop is a personal project that I created to share content about environment, personal growth and the sharing economy. It is still in development but the first version includes a "Blog", a "Pin wall" (to share video, images, quotes and texts) and a "Movies" section to share long duration videos.
 
-The project has two main parts:  
+The project has two main parts:
 
-* The platform itself written in _Angular_ (2+)
-* A Content Management System written in _React_  
+* The platform itself written in **Angular** (2+)
+* A CMS written in **React**
 
-Technically this project allows me to learn about Cloud Services, NoSQL DB, fullstack development, REST API design, data modeling and Continuous Integration/Deployment.
+As a solo developer on this side project I worked on the following tasks:
+
+* Design and UX
+* Front-end development (Angular + React for CMS)
+* Back-end development (Node.js + Express)
+* API design (Google Datastore)
+* CI integration (Jenkins)
 
 <div class="c-about__actions">
     <a role="btn" href="http://silentdrop.eu" target="_blank">Go to project</a>
@@ -27,4 +33,4 @@ Technically this project allows me to learn about Cloud Services, NoSQL DB, full
 ---
 
 #### Stack
-AWS (EC2, S3, Route 53), Google Datastore, Node.js + Express, Angular, React, Nginx, Mailgun, Imgix, Jenkins.
+AWS (EC2, S3, Route 53), Google Datastore, Node.js + Express, Angular, React, Nginx, Imgix, Jenkins.

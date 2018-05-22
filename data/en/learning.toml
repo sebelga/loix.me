@@ -2,8 +2,7 @@
     title = "Go"
     uri = "https://golang.org/"
     descr = """
-        Even though I am a front-end engineer I like to expand my knowledge around the stack. I also think that it is important for a software engineer to learn a strongly typed language.
-        Aside... Go is a pretty damn cool language to learn! :)"""
+        After many years developing with dynamic languages it was time to learn a static typed language. Go seemed like a natural fit for this and I must say that it pretty damn cool language to learn! :)"""
 
 [[current]]
     title = "GraphQL"

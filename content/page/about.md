@@ -5,25 +5,23 @@ menu:
     main:
         weight: 75
 words: [
-    "a developer.",
-    "an analyst.",
-    "a dreamer.",
+    "a full-stack engineeer.",
     "passionate.",
+    "a creative problem solver.",
+    "a dreamer.",
     "an entrepreneur.",
-    "a little belgian."
+    "a little belgian :)"
 ]
 ---
-A senior software engineer passionate about user experience with a meticulous attention to detail, striving to create **unique interactive experiences** across the different screens. Excellent problem solver and great communicator.
 
-Over 18 years **developing complex applications** in high-pressure environments with experience in dealing directly with new and existing clients. I help businesses succeed in building robust applications, making sure their software is optimized, well-tested, maintainable and scalable.
+I am a full-stack engineer and creative problem solver who strives to create **unique interactive experiences** through great software.
 
-Although my expertise lies in the **front-end** development, I also work on the **back-end** with Node.js.  Some of the languages/technologies I use are:  
-Javascript, React, Node.js, Typescript, Angular, rxjs, Redux, Webpack, Rollup...  
-I am currently learning [GraphQL](http://graphql.org/), [Go](https://golang.org/) and [Serverless architecture](https://aws.amazon.com/serverless/).
+I have experience **developing complex applications** in high-pressure environments. I help businesses succeed in building robust applications, making sure their software is optimized, well-tested, maintainable and scalable.
 
-You’ll probably catch me more than once designing and building REST APIs or building scripts for Continuous Integration :)
+My expertise lies both in front-end development and back-end with Node.js (+ currently learning Go).  
+Some of the languages/technologies I use are Javascript/Typescript, React, Node.js, GraphQL, Angular, rxjs, Redux, DynamoDB, AWS Lambda...
 
-I am the maintainer of a few **open source projects**, the main one being a [_Mongoose_ clone](https://github.com/sebelga/gstore-node) for the Google Datastore.
+I have an **entrepreneurial mindset** and I am the maintainer of a few **open source projects**, the main one being a [_Mongoose_ clone](https://github.com/sebelga/gstore-node) for the Google Datastore (gstore-node).
 
 #### Current position
 
