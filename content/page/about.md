@@ -25,4 +25,4 @@ I have an **entrepreneurial mindset** and I am the maintainer of a few **open so
 
 #### Current position
 
-Since January 2017 I am working at the European Commission as a senior front-end engineer & architect.
+Since October 2018 I am working for Elastic as a principal software engineer.
