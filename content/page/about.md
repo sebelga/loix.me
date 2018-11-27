@@ -25,4 +25,4 @@ I have an **entrepreneurial mindset** and I am the maintainer of a few **open so
 
 #### Current position
 
-Since October 2018 I am working for Elastic as a principal software engineer.
+Since October 2018 I am working for [Elastic](https://www.elastic.co) as a principal software engineer.
